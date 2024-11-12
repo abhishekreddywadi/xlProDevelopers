@@ -12,11 +12,12 @@ function App() {
   const headingref = useRef(null);
   const growingSpan = useRef(null);
 
-  useEffect(() => {
-    const locomotiveScroll = new LocomotiveScroll();
-  }, []);
+  // useEffect(() => {
+
+  // }, []);
 
   useEffect(() => {
+    const locomotiveScroll = new LocomotiveScroll();
     const handleClick = (e) => {
       setShowCanvas((prevShowCanvas) => {
         if (!prevShowCanvas) {
